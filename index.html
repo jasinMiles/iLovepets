@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ILovePets – Everything Your Pets Love</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="ILovePets home">
+      <svg viewBox="0 0 32 32" aria-hidden="true" fill="#f26a1b"><ellipse cx="7" cy="13" rx="3.2" ry="4.2"/><ellipse cx="13.5" cy="7.5" rx="3.2" ry="4.4"/><ellipse cx="21" cy="7.5" rx="3.2" ry="4.4"/><ellipse cx="27" cy="13" rx="3.2" ry="4.2"/><path d="M16 14c-5 0-9 4.6-9 8.4 0 3 2.3 4.6 5 4.3 1.6-.2 2.7-.8 4-.8s2.4.6 4 .8c2.7.3 5-1.3 5-4.3C25 18.600 21 14 16 14z"/></svg>
+      ILovePets
+    </a>
+    <nav class="links" id="menu" aria-label="Main">
+      <a href="#top" aria-current="page">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#delivery">Delivery and payment</a>
+      <a href="#brands">Brands</a>
+      <a href="#blog">Blog</a>
+    </nav>
+    <div class="tools">
+      <button class="round" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.500-3.500"/></svg></button>
+      <button class="cart" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.200 11h10.600L20 8H6.200"/><circle cx="9" cy="19" r="1.500"/><circle cx="17" cy="19" r="1.500"/></svg><b id="count">0</b><span id="total">$0</span></button>
+      <button class="round burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap" aria-labelledby="h1">
+    <h1 id="h1">Everything Your Pets Love</h1>
+
+    <div class="extras">
+      <article class="float product">
+        <label class="slot fill has-img"><input type="file" accept="image/*" aria-label="Change product photo"><span class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="11" r="2"/><path d="m21 16-5-4-8 7"/></svg>Add product photo</span><img src="images/cat.jpg" alt="Close-up of a tabby cat with green eyes"></label>
+        <div class="row">
+          <div><small>Cozy Cat House</small><strong>$49.99</strong></div>
+          <button class="go" id="addBtn" data-price="49.99" aria-label="Change Cozy Cat House to cart"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></button>
+        </div>
+      </article>
+      <aside class="float video">
+        <label class="slot fill has-img"><input type="file" accept="image/*" aria-label="Change video cover photo"><span class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="11" r="2"/><path d="m21 16-5-4-8 7"/></svg>Add cover photo</span><img src="images/shepherd.jpg" alt="A German shepherd lying on dry grass"></label>
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.500v11l9-5.500z"/></svg></span>
+        <p>Watch Product Reviews on TikTok and YouTube</p>
+      </aside>
+    </div>
+
+    <div class="stage">
+      <div class="col l">
+        <div class="pet">
+          <label class="slot has-img"><input type="file" accept="image/*" aria-label="Change dog photo"><span class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="11" r="2"/><path d="m21 16-5-4-8 7"/></svg>Add your dog photo</span><img src="images/corgi.jpg" alt="A corgi sitting on a forest path"></label>
+        </div>
+        <div class="panel side">
+          <div class="big">98K+</div>
+          <p>Happy clients and their pets who love our products</p>
+        </div>
+      </div>
+
+      <div class="col c">
+        <br>
+        <div class="pet">
+          <label class="slot has-img"><input type="file" accept="image/*" aria-label="Change main pet photo"><span class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="11" r="2"/><path d="m21 16-5-4-8 7"/></svg>Add your main pet photo<br>(transparent PNG works best)</span><img src="images/samoyed.jpg" alt="A white dog sitting on green grass"></label>
+        </div>
+        <div class="panel mid" id="shop">
+          <p>Best Products for Your Pet</p>
+          <a class="cta" href="#cats">Explore Products <i><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></i></a>
+        </div>
+      </div>
+
+      <div class="col r">
+        <div class="pet">
+          <label class="slot has-img"><input type="file" accept="image/*" aria-label="Change cat photo"><span class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="11" r="2"/><path d="m21 16-5-4-8 7"/></svg>Add your cat photo</span><img src="images/cat.jpg" alt="Close-up of a tabby cat with green eyes"></label>
+        </div>
+        <div class="panel side">
+          <div class="big">4.6 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.500 2.900 6 6.600.9-4.800 4.600 1.200 6.500L12 17.300 6.100 20.500l1.200-6.500L2.500 9.400l6.600-.9z"/></svg></div>
+          <p>Based on reviews from happy pet owners worldwide</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cats" id="cats">
+    <div class="wrap">
+      <h2>Shop by pet</h2>
+      <p class="lead">Food, toys, beds and care essentials picked for the animal you love most.</p>
+      <div class="grid">
+        <article class="cat"><label class="slot fill has-img"><input type="file" accept="image/*" aria-label="Change dogs photo"><span class="ph">Add a photo</span><img src="images/shepherd.jpg" alt="A German shepherd lying on dry grass"></label><h3>Dogs <span>Shop →</span></h3></article>
+        <article class="cat"><label class="slot fill has-img"><input type="file" accept="image/*" aria-label="Change cats photo"><span class="ph">Add a photo</span><img src="images/cat.jpg" alt="Close-up of a tabby cat with green eyes"></label><h3>Cats <span>Shop →</span></h3></article>
+        <article class="cat"><label class="slot fill has-img"><input type="file" accept="image/*" aria-label="Change small pets photo"><span class="ph">Add a photo</span><img src="images/samoyed.jpg" alt="A white dog sitting on green grass"></label><h3>All pets <span>Shop →</span></h3></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="logo"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" fill="#f26a1b"><ellipse cx="7" cy="13" rx="3.200" ry="4.200"/><ellipse cx="13.500" cy="7.500" rx="3.200" ry="4.400"/><ellipse cx="21" cy="7.500" rx="3.200" ry="4.400"/><ellipse cx="27" cy="13" rx="3.200" ry="4.200"/><path d="M16 14c-5 0-9 4.600-9 8.400 0 3 2.300 4.600 5 4.300 1.600-.2 2.700-.8 4-.8s2.400.6 4 .8c2.700.3 5-1.300 5-4.300C25 18.600 21 14 16 14z"/></svg>ILovePets</div>
+    <nav aria-label="Footer"><a href="#delivery" id="delivery">Delivery and payment</a><a href="#brands" id="brands">Brands</a><a href="#blog" id="blog">Blog</a></nav>
+    <small>© 2026 ILovePets. All rights reserved.</small>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
