@@ -18,6 +18,10 @@
   });
   menu.addEventListener('click', function(e){ if (e.target.tagName === 'A'){ menu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); } });
 
+  function closeMenu(){ menu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeMenu(); });
+  window.addEventListener('resize', function(){ if (window.innerWidth > 1100) closeMenu(); });
+
   // Cart
   var n = 0, sum = 0, count = document.getElementById('count'), total = document.getElementById('total');
   document.getElementById('addBtn').addEventListener('click', function(e){
